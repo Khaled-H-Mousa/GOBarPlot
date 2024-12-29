@@ -11,7 +11,7 @@ The goal of GOBarPlot is to ...
 You can install the development version of GOBarPlot like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+devtools::install_github("Khaled-H-Mousa/GOBarPlot")
 ```
 
 ## Example
