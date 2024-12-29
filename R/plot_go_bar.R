@@ -1,0 +1,29 @@
+#' Plot GO Bar Chart
+#'
+#' Creates a bar chart to visualize GO enrichment results and saves it to a file.
+#'
+#' @param data A data frame prepared by the `prepare_go_data` function.
+#' @param output_file A string specifying the path and filename for the output PDF file.
+#' @param aspect_ratio A numeric value for the aspect ratio of the plot (default: 2.5).
+#' @param height A numeric value for the height of the plot in inches (default: 7).
+#' @return Saves a PDF file with the generated bar chart.
+#' @import ggplot2
+#' @export
+plot_go_bar <- function(E, output_file = NULL, aspect_ratio = 2.5, height = 7) {
+  # Create the bar plot
+  g <- ggplot() +
+    geom_bar(data = E, aes(x = genes_number, y = description, fill = category),
+             stat = "identity", width = 0.5) +
+    theme(axis.text.x = element_text(angle = 0, vjust = 1, hjust = 1, size = 15)) +
+    theme(panel.background = element_blank()) +
+    labs(title = "GO Function Classification", x = "Number of Genes", y = "Function Class") +
+    theme(plot.title = element_text(size = 10, hjust = 0.5))
+  if(!is.null(output_file))
+  {
+    # Save the plot
+    ggplot2::ggsave(g, filename = output_file, width = 4 * aspect_ratio, height = height)
+  }
+  else{
+    return (g)
+  }
+}

@@ -1,0 +1,26 @@
+{
+    "id": "E9EB3492",
+    "path": "~/Documents/GOBarPlot/R/plot_go_bar.R",
+    "project_path": "R/plot_go_bar.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1735502457114.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "24,0",
+        "scrollLine": "10"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1735502575,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1735502575845,
+    "read_only": false,
+    "read_only_alternatives": []
+}
