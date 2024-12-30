@@ -1,5 +1,5 @@
----
 
+```markdown
 # GOBarPlot
 
 **GOBarPlot** is an R package designed to simplify the visualization of Gene Ontology (GO) enrichment analysis results. It provides functions for preparing GO data and generating bar charts to represent functional classification.
@@ -92,5 +92,3 @@ Contributions are welcome! If you find a bug or have a feature request, please o
 
 This package was created with inspiration from the analysis of GO enrichment data. Special thanks to the developers of `ggplot2` and `readr` for their excellent tools.
 ```
-
----
