@@ -16,7 +16,7 @@ plot_go_bar <- function(E, output_file = NULL, aspect_ratio = 2.5, height = 7) {
              stat = "identity", width = 0.5) +
     theme(axis.text.x = element_text(angle = 0, vjust = 1, hjust = 1, size = 15)) +
     theme(panel.background = element_blank()) +
-    labs(title = "GO Function Classification", x = "Number of Genes", y = "Function Class") +
+    labs(title = "GO Function Classification", x = "Function Class", y = "Number of Genes") +
     theme(plot.title = element_text(size = 10, hjust = 0.5))
   if(!is.null(output_file))
   {
