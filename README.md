@@ -1,4 +1,5 @@
 # GOBarPlot
+![ChickpeaOmicsR](GO.png)
 
 **GOBarPlot** is an R package designed to simplify the visualization of Gene Ontology (GO) enrichment analysis results. It provides functions for preparing GO data and generating bar charts to represent functional classification.
 
