@@ -11,8 +11,8 @@
 #' @export
 plot_go_bar <- function(E, output_file = NULL, aspect_ratio = 2.5, height = 7) {
   # Create the bar plot
-  g <- ggplot() +
-    geom_bar(data = E, aes(x = genes_number, y = description, fill = category),
+  g <- ggplot() + 
+    geom_bar(data = E, aes(x = description, y = genes_number, fill = category),
              stat = "identity", width = 0.5) +
     theme(axis.text.x = element_text(angle = 0, vjust = 1, hjust = 1, size = 15)) +
     theme(panel.background = element_blank()) +
