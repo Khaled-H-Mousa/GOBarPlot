@@ -51,21 +51,6 @@ plot_go_bar(go_data, output_file)
 
 ---
 
-## Example Dataset
-
-The package comes with an example dataset to help you get started. You can access it as follows:
-
-```R
-# Load the example dataset
-example_path <- system.file("extdata", "example_GO_ontology.tsv", package = "GOBarPlot")
-go_data <- prepare_go_data(example_path)
-
-# Create a bar chart
-plot_go_bar(go_data, "Example_GO_BarChart.pdf")
-```
-
----
-
 ## Requirements
 
 - **R version**: ≥ 4.0.0
